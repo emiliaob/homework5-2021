@@ -188,31 +188,35 @@ header{
 
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) { 
   nav{
-    padding: 30px 0;
-    
-    /* Your code here */
-  }
-
-  .container{
-   display: grid;
-   grid-template-columns: 50px auto 500px auto 50px;
-   grid-template-rows: repeat(5, 500px)
-  }
-
+  padding: 30px 0;
+  text-align: right;
   
+  /* Your code here */
+}
+
+.container{
+ display: grid;
+ grid-template-columns: 50px auto 500px auto 50px;
+ grid-template-rows: repeat(5, 500px)
+}
 
 
-  .about, .method-image, .contact-image, .clients{
-    grid-column: 3/ span 2;
-  }
 
-  
 
-  .method, .clients-image, .contact, .about-image{
-   grid-column: 2/span 2;
-  }
+.about, .method-image, .contact-image, .clients{
+  grid-column: 3/ span 2;
+}
+
+
+
+
+.method, .clients-image, .contact, .about-image{
+ grid-column: 2/span 2;
+} }
+ 
+ 
 
 
 
@@ -223,8 +227,7 @@ header{
 /* Make no changes below this line.
    *************************************** 
    */
-@media screen and (prefers-reduced-motion: reduce){
-  /*Turn off scroll*/
+@media screen and (prefers-reduced-motion: reduce){  /*Turn off scroll*/
   html{
       scroll-behavior: auto; /* Removes scroll animation */
   }
@@ -239,4 +242,6 @@ header{
   header{
     background-attachment: initial;
   }
+ 
 }
+
